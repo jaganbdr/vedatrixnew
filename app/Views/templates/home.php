@@ -45,7 +45,7 @@
       <!-- header inner -->
       <div class="header">
          <div class="container-fluid">
-         
+
             <div class="row">
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                   <div class="full">
@@ -216,8 +216,8 @@
       </div>
    </div>
    <!-- end clients -->
-   
-   
+
+
    <!--  contact -->
    <div id="contact" class="contact">
       <div class="container">
@@ -225,25 +225,26 @@
             <div class="col-md-12">
                <div class="titlepage">
                   <h2>Request A call back</h2>
+                  <h4 style="color:grey;"><?= esc($msg) ?></h4>
                </div>
             </div>
             <div class="col-md-6 offset-md-3">
-               <form id="request" class="main_form">
+               <form action="/contact" id="request" class="main_form" method="POST">
                   <div class="row">
                      <div class="col-md-12 ">
-                        <input class="contactus" placeholder="Full Name" type="type" name="Full Name">
+                        <input class="contactus" placeholder="Full Name" type="text" name="name" required="true">
                      </div>
                      <div class="col-md-12">
-                        <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
+                        <input class="contactus" placeholder="Phone Number" type="number" name="phone" required="true">
                      </div>
                      <div class="col-md-12">
-                        <input class="contactus" placeholder="Email" type="type" name="Email">
+                        <input class="contactus" placeholder="Email" type="email" name="email" required="true">
                      </div>
                      <div class="col-md-12">
-                        <textarea class="contactus" placeholder="Message" type="type" Message="Name">Message </textarea>
+                        <textarea class="contactus" type="text" Message="Name" name="msg" required="true" placeholder="message"></textarea>
                      </div>
                      <div class="col-sm-12">
-                        <button class="send_btn">Send</button>
+                        <input type="submit" class="send_btn"></input>
                      </div>
                   </div>
                </form>
@@ -252,9 +253,9 @@
       </div>
    </div>
    <!-- end contact -->
-   
 
-  
+
+
    <!--  footer -->
    <footer>
       <div class="footer">
