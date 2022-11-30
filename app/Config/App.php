@@ -24,7 +24,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'https://www.vedatrix.xyz/vedatrix/public/';
+    public $baseURL = 'https://www.vedatrix.xyz/';
 
     /**
      * --------------------------------------------------------------------------
