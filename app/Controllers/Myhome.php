@@ -35,7 +35,7 @@ class Myhome extends BaseController
             $data=[
                 'msg'=>$msg
             ];
-            return view('templates/home', $data);
+            return redirect()->route('home', $data);
         }
        catch(\Exception $e)
        {
