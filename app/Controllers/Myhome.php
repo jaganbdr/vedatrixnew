@@ -35,7 +35,7 @@ class Myhome extends BaseController
             $data=[
                 'msg'=>$msg
             ];
-            return redirect()->route('https://www.vedatrix.xyz/vedatrix/public/home');
+            return redirect()->route('home');
         }
        catch(\Exception $e)
        {
