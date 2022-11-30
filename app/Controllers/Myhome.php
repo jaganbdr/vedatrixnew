@@ -39,11 +39,11 @@ class Myhome extends BaseController
         }
        catch(\Exception $e)
        {
-        echo $e->getMessage();
+        //echo $e->getMessage();
         $data=[
             'msg'=>"email already exists",
         ];
-        return view('templates/home', $data);
+        exit($e->getMessage());
        }
     }
 }
