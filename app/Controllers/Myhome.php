@@ -43,7 +43,7 @@ class Myhome extends BaseController
         $data=[
             'msg'=>"email already exists",
         ];
-        $route="home";
+        $route="/";
         throw new \CodeIgniter\Router\Exceptions\RedirectException($route);
        }
     }
