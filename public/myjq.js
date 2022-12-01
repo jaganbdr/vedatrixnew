@@ -3,10 +3,10 @@ $(document).ready(function () {
 
   $("#request").submit(function (e) {
     dataString = $("#request").serialize();
-
+    url=$("#request").attr("url");
     $.ajax({
       type: "POST",
-      url: "/contact",
+      url: url,
       data: dataString,
       success: function (data) {
         alert(data);
