@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  alert("document loaded");
+  //alert("document loaded");
 
   $("#request").submit(function (e) {
     dataString = $("#request").serialize();
