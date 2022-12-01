@@ -31,6 +31,12 @@
    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+      <!--My jquery-->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="myjq.js"></script>
+
 </head>
 <!-- body -->
 
@@ -225,26 +231,26 @@
             <div class="col-md-12">
                <div class="titlepage">
                   <h2>Request A call back</h2>
-                  <h4 style="color:grey;"><?= esc($msg) ?></h4>
+                  
                </div>
             </div>
             <div class="col-md-6 offset-md-3">
-               <form action="<?=site_url()?>/contact" id="request" class="main_form" method="POST">
+               <form id="request" class="main_form" >
                   <div class="row">
                      <div class="col-md-12 ">
-                        <input class="contactus" placeholder="Full Name" type="text" name="name" required="true">
+                        <input class="contactus" placeholder="Full Name" type="text" name="name" required="true" id="fname">
                      </div>
                      <div class="col-md-12">
-                        <input class="contactus" placeholder="Phone Number" type="number" name="phone" required="true">
+                        <input class="contactus" placeholder="Phone Number" type="number" name="phone" required="true" id="fnumber">
                      </div>
                      <div class="col-md-12">
-                        <input class="contactus" placeholder="Email" type="email" name="email" required="true">
+                        <input class="contactus" placeholder="Email" type="email" name="email" required="true" id="femail" >
                      </div>
                      <div class="col-md-12">
-                        <textarea class="contactus" type="text" Message="Name" name="msg" required="true" placeholder="message"></textarea>
+                        <textarea class="contactus" type="text" Message="Name" name="msg" required="true" placeholder="message" id="fmsg"></textarea>
                      </div>
                      <div class="col-sm-12">
-                        <input type="submit" class="send_btn"></input>
+                        <input id="sub_btn" type="submit" class="send_btn"></input>
                      </div>
                   </div>
                </form>
