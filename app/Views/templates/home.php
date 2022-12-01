@@ -235,7 +235,7 @@
                </div>
             </div>
             <div class="col-md-6 offset-md-3">
-               <form id="request" class="main_form" url="<?=site_url()?>/contact">
+               <form id="request" class="main_form" url="<?=base_url()?>/contact">
                   <div class="row">
                      <div class="col-md-12 ">
                         <input class="contactus" placeholder="Full Name" type="text" name="name" required="true" id="fname">
