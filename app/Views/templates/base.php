@@ -75,7 +75,7 @@
                                  <a class="nav-link" href="<?=base_url()?>/"><i class="fa-solid fa-house"></i> Home</a>
                               </li>
                               <li class="nav-item">
-                                 <a class="nav-link" href="/about"><i class="fa-solid fa-user-minus"></i> About Us</a>
+                                 <a class="nav-link" href="<?=base_url()?>/about"><i class="fa-solid fa-user-minus"></i> About Us</a>
                               </li>
                               <li class="nav-item">
                                  <a class="nav-link" href="ourwork.html"><i class="fa-solid fa-gears"></i> Services</a>
