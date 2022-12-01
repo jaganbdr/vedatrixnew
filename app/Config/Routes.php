@@ -38,6 +38,7 @@ $routes->set404Override();
 //$routes->get('/', 'Home::index');
 $routes->add('/', 'Myhome::index', ['as' => 'home']);
 $routes->add('/contact', 'Myhome::createContact');
+$routes->add('/about', 'Aboutus::index');
 
 /*
  * --------------------------------------------------------------------
